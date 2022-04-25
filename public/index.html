@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alhadad.</title>
+    <!-- FONT POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- TAILWIND CSS -->
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="overflow-hidden">
+    <div class="whitebg bg-gray-50 font-primary w-screen h-screen text-gray-50" style="font-family: 'Poppins', sans-serif;">
+        <div class="blackbg bg-gray-900 w-screen h-80 top-0 left-0 absolute lg:w-1/3 lg:h-screen"></div>
+
+        <!-- NAVBAR TOP MOBILE AND LEFT DESKTOP -->
+        <nav class="flex justify-center items-center absolute w-screen h-80 text-gray-50 pt-6 pr-1 pl-3 lg:flex-col lg:w-1/6 lg:h-screen lg:p-0 lg:pl-24 lg:py-12" style="z-index:8;">
+            <a href="#" class="flex justify-center w-full order-2 self-stretch text-4xl font-bold text-shadow lg:justify-start lg:items-start lg:h-full lg:order-1 lg:text-2xl lg:shadow-none">
+                Alhadad.
+            </a>
+            <div class="flex flex-col justify-center items-start w-full order-1 self-stretch lg:flex-row lg:justify-start lg:items-center lg:h-full">
+                <span class="w-1 h-32 bg-gray-50">
+                    <span class="drop w-1 h-32 bottom bg-gray-500 absolute transition"></span>
+                </span>
+            </div>
+            <ul class="flex flex-col justify-center items-end gap-y-16 w-full order-3 self-stretch text-sm lg:justify-start lg:flex-row lg:items-end lg:gap-x-8 lg:h-full">
+                <li class="transform -rotate-90 lg:rotate-0"><a href="#">FAQ</a></li>
+                <li class="transform -rotate-90 lg:rotate-0"><a href="#">Help</a></li>
+            </ul>
+        </nav>
+
+        <!-- NAVBAR RIGHT DESKTOP -->
+        <nav class="hidden lg:flex flex-col items-center w-24 h-screen absolute top-0 right-0" style="z-index: 7;">
+            <label for="toggleDesktop" class="flex justify-center items-center w-full h-32 bg-gray-50 opacity-50 cursor-pointer">
+                <img src="./asset/icons/menu.svg" alt="menu">
+            </label>
+            <ul class="sosmed flex flex-col justify-evenly items-center w-full h-full">
+                 <li>
+                    <a href="https://www.instagram.com/alhadad.xyz/" target="_blank"><img src="./asset/icons/instagram.svg" width="24" height="24" alt="instagram" class="transform hover:rotate-180 transition"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/alhadad_xyz" target="_blank"><img src="./asset/icons/twitter.svg" width="24" height="24" alt="twitter" class="transform hover:rotate-180 transition"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/al.hadad.94617" target="_blank"><img src="./asset/icons/facebook.svg" width="24" height="24" alt="facebook" class="transform hover:rotate-180 transition"></a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/alhadad-xyz" target="_blank"><img src="./asset/icons/github.svg" width="24" height="24" alt="github" class="transform hover:rotate-180 transition"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/al-hadad-b73038216" target="_blank"><img src="./asset/icons/linkedin.svg" width="24" height="24" alt="linkedin" class="transform hover:rotate-180 transition"></a>
+                </li>
+            </ul>
+            <div class="flex justify-center items-center w-full h-32 text-lg font-semibold text-gray-900">
+                En
+            </div>
+        </nav>
+
+        <!-- NAVBAR BOTTOM MOBILE -->
+        <nav class="flex justify-center items-center w-full h-16 fixed bottom-0 left-0 right-0 border-t-2 border-gray-200 lg:hidden" style="z-index: 99;">
+            <div class="flex justify-center items-center text-gray-900 w-full h-full font-semibold bg-gray-50">
+                En
+            </div>
+            <label for="toggleMobile" class="flex justify-center items-center w-full h-full bg-gray-100 cursor-pointer">
+                <img src="./asset/icons/menu.svg" alt="menu" class="w-6 h-6">
+            </label>
+            <div class="flex justify-center items-center bg-gray-50 w-full h-full">
+                
+            </div>
+        </nav>
+
+        <!-- MENU MOBILE -->
+        <input type="checkbox" id="toggleMobile" hidden>
+        <nav class="flex flex-col items-center absolute w-screen h-96 rounded-3xl bottom-0 left-0 right-0 bg-gray-900 py-8 transform translate-y-full transition lg:hidden" id="menuMobile" style="z-index: 9;">
+            <label for="toggleMobile" class="flex justify-end items-center w-screen h-1/4 cursor-pointer" style="z-index: 99;">
+                <img src="./asset/icons/x.svg" alt="close">
+            </label>
+            <ul class="flex flex-col justify-center items-center w-screen text-lg font-semibold tracking-widest uppercase pb-4 mb-2 gap-2">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li>
+                    <a href="#" class="bg-gray-50 text-gray-900 px-4 font-medium hover:bg-gray-200">Get my cv</a>
+                </li> 
+            </ul>
+            <h6>follow me</h6>
+            <ul class="flex justify-center items-center gap-8 pb-4 pt-2">
+                <li>
+                    <a href="https://www.instagram.com/alhadad.xyz/"><img src="./asset/icons/instagramW.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/alhadad_xyz"><img src="./asset/icons/twitterW.svg" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/al.hadad.94617"><img src="./asset/icons/facebookW.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/alhadad-xyz"><img src="./asset/icons/githubW.svg" alt="github"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/al-hadad-b73038216"><img src="./asset/icons/linkedinW.svg" alt="linkedin"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- MENU DESKTOP -->
+        <input type="checkbox" id="toggleDesktop" hidden>
+        <nav id="menuDesktop" class="hidden lg:flex justify-start items-center absolute top-0 right-0 px-16 bg-gray-100 text-gray-900 text-medium font-medium tracking-wide uppercase gap-x-8 transform translate-x-full transition duration-1000" style="height: 5.6rem; width: 32rem;">
+            <label for="toggleProject" class="flex justify-center items-center h-full cursor-pointer">
+                Projects
+            </label>
+            <label for="toggleSkills" class="flex justify-center items-center h-full cursor-pointer">
+                Skills
+            </label>
+            <div class="flex justify-center items-center h-full">
+                <a href="" class="bg-gray-900 text-gray-50 py-1 px-4">Get my cv</a>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <main class="flex flex-col justify-center items-center w-screen h-screen">
+            <div class="card flex flex-col justify-center w-10/12 lg:flex-row lg:w-8/12">
+                <div class="w-full h-full relative">
+                    <img src="./asset/hero.jpg" alt="photo" class="img-hero w-full h-full object-cover"><!-- 
+                    <img src="./asset/hero.jpg" alt="photo 2" class="hidden lg:block target-img absolute object-cover w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition" hidden> -->
+                </div>
+                <div class="flex flex-col justify-center items-center w-full h-full lg:items-start lg:pl-16">
+                    <ul class="pro flex justify-center items-center gap-4 text-xs text-gray-50 lg:text-sm">
+                        <li class="px-1 bg-gray-400">Frontend</li>
+                        <li class="px-1 bg-gray-400">Backend</li>
+                    </ul>
+                    <h1 class="desc text-gray-900 text-4xl font-bold my-1 text-center lg:text-5xl lg:my-2 lg:text-left">Good Night</h1>
+                    <p class="desc text-gray-600 text-md font-medium text-center my-2 lg:text-lg lg:text-left">
+                        My name is <span class="text-gray-900">Mohammad Khalid I Al Hadad</span>, you can call me al, i am 19 y.o, Junior Web Fullstack Developer and now i currently develop my UI Design & frontend skill.
+                    </p>
+                    <a href="#" class="desc uppercase font-semibold text-lg tracking-wider mt-8 text-gray-800 transform transition">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- PROJECTS -->
+        <input type="checkbox" id="toggleProject" hidden>
+        <main id="menuProject" class="hidden lg:flex flex-col w-screen h-screen bg-gray-900 absolute top-0 right-0 transform -translate-x-full transition duration-1000 px-16 py-8" style="z-index: 9;">
+            <div class="flex w-full flex-col justify-start items-center">
+                <label for="toggleProject" class="flex w-full border-gray-50 justify-start items-center cursor-pointer">
+                    <img src="./asset/icons/left.svg" alt="left" width="16" height="16">
+                    <div class="font-semibold text-gray-50 uppercase tracking-wide text-md">back</div>
+                </label>
+                <div class="flex w-full border-gray-50 justify-center items-center">
+                    <div class="font-semibold text-gray-50 uppercase tracking-wide text-md">My Latest Work</div>
+                </div>
+            </div>
+            <div class="flex w-full h-80 p-8 gap-x-16">
+                <div class="flex w-full">
+                  <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex flex-col w-full text-gray-100">
+                    <h6 class="text-md text-gray-500">03/14</h6>
+                    <h1 class="text-4xl font-bold tracking-wide">Project Name</h1>
+                    <p class="font-medium text-gray-400 mt-4">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Magni, perspiciatis molestias aliquid at ad quam voluptatibus nobis nesciunt optio. Dolores repellendus ipsum possimus tempore modi saepe cum totam ad libero.</p>
+                    <a href="" class="text-gray-300 mt-8 uppercase font-semibold tracking-wider">check out</a>
+                </div>
+            </div>
+            <div class="flex w-full h-24 gap-x-8 mt-4 px-4">
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+            </div>
+            <div class="flex w-full h-24 gap-x-8 mt-4 px-4">
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+                <div class="flex w-full h-full">
+                    <img src="./asset/hero.jpg" alt="" class="w-full h-full object-cover object-center">  
+                </div>
+            </div>
+        </main>
+
+        <!-- SKILLS -->
+        <input type="checkbox" id="toggleSkills" hidden>
+        <main id="menuSkills" class="hidden lg:flex flex-col w-screen h-screen bg-gray-500 absolute top-0 right-0 transform translate-x-full transition duration-1000" style="z-index: 9;">
+            <div class="flex w-full flex-col justify-start items-center p-16">
+                <label for="toggleSkills" class="flex w-full border-gray-50 justify-start items-center cursor-pointer">
+                    <div class="font-semibold text-gray-50 uppercase tracking-wide text-md">back</div>
+                    <img src="./asset/icons/left.svg" alt="left" width="16" height="16" class="transform rotate-180">
+                </label>
+                <div class="flex w-full border-gray-50 justify-center items-center">
+                    <div class="font-semibold text-gray-50 uppercase tracking-wide text-md">Experience</div>
+                </div>
+            </div>
+            <div class="flex justify-center w-full h-full">
+                no currently project found
+            </div>
+        </main>
+
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
